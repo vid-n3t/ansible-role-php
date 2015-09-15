@@ -1,0 +1,18 @@
+---
+
+- name: install phpbrew
+  become: yes
+  get_url:
+    url: "{{ item.url }}"
+    dest: "{{ item.dest }}"
+    owner: root
+    group: wheel
+    mode: 0777
+  with_items:
+    - { url: 'https://github.com/phpbrew/phpbrew/raw/master/phpbrew', dest: /usr/local/bin/phpbrew}
+
+- name: Install php versions
+  shell: >
+    PHPBREW_ROOT=/opt/phpbrew phpbrew install {{item}} +pdo+mysql +mcrypt +intl +json +sqlite +ctype
+    creates=/opt/phpbrew/php/php-{{item}}
+  with_items: phpbrew_versions
