@@ -83,4 +83,4 @@
     - { regexp: ';?phar.readonly', line: 'phar.readonly = Off' }
 
 - name: install composer
-  homebrew: name=composer state=latest
+  shell: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
