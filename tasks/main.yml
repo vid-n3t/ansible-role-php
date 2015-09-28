@@ -80,7 +80,7 @@
     - { regexp: 'date.default_latitude', line: 'date.default_latitude = 50.877369' }
     - { regexp: 'date.default_longitude', line: 'date.default_longitude = 4.684167' }
     - { regexp: 'session.cookie_httponly', line: 'session.cookie_httponly = 1' }
-    - { regexp: ';?phar.readonly = On', line: 'phar.readonly = On' }
+    - { regexp: ';?phar.readonly', line: 'phar.readonly = Off' }
 
 - name: install composer
   homebrew: name=composer state=latest
