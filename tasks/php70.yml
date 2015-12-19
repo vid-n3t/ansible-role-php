@@ -7,14 +7,8 @@
   homebrew: name={{item}} state=latest
   with_items:
     - php70-apcu
-    - php70-http
     - php70-xdebug
-    - php70-memcached
-    - php70-symfony-debug
-    - php70-mongo
-    - php70-yaml
     - php70-imagick
-    - php70-twig
     - php70-mcrypt
     - php70-intl
     - php70-pdo-pgsql
