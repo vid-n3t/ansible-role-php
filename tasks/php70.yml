@@ -21,6 +21,7 @@
     line="{{ item.line }}"
     state=present
     create=true
+    insertafter="^#?LoadModule php5_module"
   with_items:
     - { regexp: '^#?LoadModule php7_module', line: "LoadModule php7_module    /usr/local/opt/php70/libexec/apache2/libphp7.so" }
 
