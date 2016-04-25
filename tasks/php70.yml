@@ -48,8 +48,13 @@
     regexp="{{ item.regexp }}"
     line="{{ item.line }}"
     state=present
+    create=yes
   with_items:
     - { regexp: 'apc.shm_size', line: 'apc.shm_size=256M' }
+    - { regexp: 'apc.enabled', line: 'apc.enabled=1' }
+    - { regexp: 'apc.ttl', line: 'apc.ttl=7200' }
+    - { regexp: 'apc.mmap_file_mask', line: 'apc.mmap_file_mask=/tmp/apc.XXXXXX' }
+    - { regexp: 'apc.enable_cli', line: 'apc.enable_cli=1' }
 
 - name: configure the php.ini settings
   lineinfile: >
