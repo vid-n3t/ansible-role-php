@@ -1,7 +1,7 @@
 ---
 
 - name: install php
-  homebrew: name=php70 state=latest install_options="--with-apache"
+  homebrew: name=php70 state=latest install_options="--with-apache --with-gmp --without-fpm"
 
 - name: install php modules
   homebrew: name={{item}} state=latest
