@@ -1,17 +1,16 @@
 ---
 
 - name: install php
-  homebrew: name=php70 state=latest install_options="--with-mysql --with-apache"
+  homebrew: name=php70 state=latest install_options="--with-apache"
 
 - name: install php modules
   homebrew: name={{item}} state=latest
   with_items:
     - php70-apcu
-    - php70-xdebug
     - php70-imagick
     - php70-mcrypt
     - php70-intl
-    - php70-pdo-pgsql
+    - php70-opcache
 
 - name: activate mod_php
   become: yes
