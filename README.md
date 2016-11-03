@@ -8,9 +8,9 @@ Ansible role to install PHP on OSX. This role is part of the Superlumic project 
 
 ## Dependencies
 
-* [roderik.superlumic-homebrew](https://github.com/superlumic/ansible-role-homebrew)
-* [roderik.superlumic-mysql](https://github.com/superlumic/ansible-role-mysql)
-* [roderik.superlumic-postgresql](https://github.com/superlumic/ansible-role-postgresql)
+* [vid.superlumic-homebrew](https://github.com/superlumic/ansible-role-homebrew)
+* [vid.superlumic-mysql](https://github.com/superlumic/ansible-role-mysql)
+* [vid.superlumic-postgresql](https://github.com/superlumic/ansible-role-postgresql)
 
 # Usage
 

@@ -1,5 +1,5 @@
 ---
 
-- src: roderik.superlumic-homebrew
-- src: roderik.superlumic-mysql
-- src: roderik.superlumic-postgresql
+- src: vid.superlumic-homebrew
+- src: vid.superlumic-mysql
+- src: vid.superlumic-postgresql
