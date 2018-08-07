@@ -1,9 +1,10 @@
 ---
 
-# homebrew/dupes is deprecated, now in core
-#- name: tap homebrew/dupes
-#  homebrew_tap: tap=homebrew/dupes state=present
+# homebrew/dupes is deprecated, "All formulae were migrated to Homebrew/homebrew-core or deleted"
+- name: tap homebrew/dupes
+  homebrew_tap: tap=homebrew/dupes state=present
 
+# homebrew/php is deprecated, now in core or not implemented "With the migration to Homebrew-core the php formula has stopped taking over the role of PECL."
 - name: tap homebrew/homebrew-php
   homebrew_tap: tap=homebrew/php state=present
 
