@@ -1,7 +1,8 @@
 ---
 
-- name: tap homebrew/dupes
-  homebrew_tap: tap=homebrew/dupes state=present
+# homebrew/dupes is deprecated, now in core
+#- name: tap homebrew/dupes
+#  homebrew_tap: tap=homebrew/dupes state=present
 
 - name: tap homebrew/homebrew-php
   homebrew_tap: tap=homebrew/php state=present
